@@ -20,11 +20,9 @@ body{background:var(--bg);color:var(--text);padding-bottom:76px;line-height:1.45
 .hero{background:linear-gradient(135deg,#0284c7,#0369a1);color:#fff;border-radius:18px;padding:20px 16px;margin:14px 0}
 .badges{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
 .pill{font-size:11px;font-weight:700;padding:4px 9px;border-radius:99px;background:rgba(255,255,255,.18)}
-.hero h2{font-size:22px;line-height:1.2;margin-bottom:8px}
-.hero p{font-size:13px;opacity:.92;margin-bottom:14px}
+.hero h2{font-size:22px;line-height:1.2;margin-bottom:8px}.hero p{font-size:13px;opacity:.92;margin-bottom:14px}
 .h-acts{display:grid;grid-template-columns:1.3fr 1fr;gap:8px}
-.h-acts .btn-p{background:#fff;color:var(--pri-d)}
-.h-acts .btn-s{background:rgba(255,255,255,.15);color:#fff;border-color:rgba(255,255,255,.3)}
+.h-acts .btn-p{background:#fff;color:var(--pri-d)}.h-acts .btn-s{background:rgba(255,255,255,.15);color:#fff;border-color:rgba(255,255,255,.3)}
 .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:16px}
 .st{background:var(--card);border:1px solid var(--bdr);border-radius:12px;padding:10px 6px;text-align:center}
 .st b{display:block;font-size:15px;color:var(--pri)}.st span{font-size:11px;color:var(--muted)}
@@ -35,23 +33,34 @@ body{background:var(--bg);color:var(--text);padding-bottom:76px;line-height:1.45
 .card b{display:block;font-size:13px;margin:4px 0 2px}.card span{font-size:11px;color:var(--muted)}
 .box{background:var(--card);border:1px solid var(--bdr);border-radius:16px;padding:16px}
 .fld{margin-bottom:11px}.fld label{display:block;font-size:12px;font-weight:600;color:var(--muted);margin-bottom:4px}
-.fld input,.fld select{width:100%;padding:11px;border:1px solid var(--bdr);border-radius:10px;font-size:14px;background:#fff}
+.fld input,.fld select,.fld textarea{width:100%;padding:11px;border:1px solid var(--bdr);border-radius:10px;font-size:14px;background:#fff}
 .ftr{text-align:center;padding:18px 0 8px;font-size:12px;color:var(--muted)}
 .doc-lnk{background:none;border:none;color:var(--muted);text-decoration:underline;font-size:12px;margin-top:6px;cursor:pointer}
 .bbar{position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid var(--bdr);padding:9px 15px;z-index:45}
 .bbar-in{max-width:480px;margin:0 auto;display:grid;grid-template-columns:1fr 1.5fr;gap:8px}
-.modal{display:none;position:fixed;inset:0;background:#0f172a;color:#fff;z-index:90;overflow-y:auto;padding:16px}
-.m-in{max-width:480px;margin:0 auto}
-.q-item{background:#1e293b;border-radius:12px;padding:12px;margin-bottom:9px;display:flex;justify-content:space-between;align-items:center;gap:8px}
-.teeth{display:grid;grid-template-columns:repeat(8,1fr);gap:5px;margin:10px 0}
-.t-btn{padding:8px 0;border-radius:7px;border:1px solid #334155;background:#1e293b;color:#fff;font-size:11px;font-weight:700;cursor:pointer}
-.t-btn.bad{background:#ef4444;border-color:#ef4444}.t-btn.rct{background:#f59e0b;border-color:#f59e0b;color:#000}
+.modal{display:none;position:fixed;inset:0;background:#0b1120;color:#f8fafc;z-index:90;overflow-y:auto;padding:14px}
+.m-in{max-width:480px;margin:0 auto;padding-bottom:30px}
+.d-top{display:flex;justify-content:space-between;align-items:center;padding-bottom:12px;border-bottom:1px solid #1e293b;margin-bottom:14px}
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:14px}
+.kpi{background:#1e293b;border:1px solid #334155;border-radius:12px;padding:10px;text-align:center}
+.kpi b{display:block;font-size:17px;color:#38bdf8}.kpi span{font-size:11px;color:#94a3b8}
+.tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;background:#1e293b;padding:4px;border-radius:12px;margin-bottom:14px}
+.tab{background:none;border:none;color:#94a3b8;padding:9px 4px;border-radius:9px;font-size:12px;font-weight:700;cursor:pointer}
+.tab.act{background:#0284c7;color:#fff}
+.d-card{background:#1e293b;border:1px solid #334155;border-radius:13px;padding:13px;margin-bottom:10px}
+.d-inp{width:100%;padding:10px;border-radius:9px;border:1px solid #334155;background:#0f172a;color:#fff;font-size:13px;margin-bottom:8px}
+.teeth{display:grid;grid-template-columns:repeat(8,1fr);gap:5px;margin:8px 0 14px}
+.t-btn{padding:9px 0;border-radius:7px;border:1px solid #334155;background:#0f172a;color:#e2e8f0;font-size:11px;font-weight:700;cursor:pointer}
+.t-btn.bad{background:#ef4444;border-color:#ef4444;color:#fff}
+.t-btn.rct{background:#f59e0b;border-color:#f59e0b;color:#000}
+.t-btn.imp{background:#10b981;border-color:#10b981;color:#fff}
+.leg{display:flex;gap:10px;flex-wrap:wrap;font-size:11px;color:#94a3b8;margin-bottom:10px}
+.leg i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:4px;vertical-align:middle}
 </style></head><body>
 <header class="nav"><div class="wrap nav-in">
   <div class="brand"><div class="logo" id="cLogo">DC</div><div class="btxt"><h1 id="cName">Smile Care Dental</h1><p id="cAddr">Main Road</p></div></div>
   <a href="#book" class="btn btn-p" style="padding:8px 11px;font-size:12px">Book</a>
 </div></header>
-
 <main class="wrap">
   <section class="hero">
     <div class="badges"><span class="pill">● Open Today</span><span class="pill">★ 4.9 Google Rated</span></div>
@@ -59,13 +68,11 @@ body{background:var(--bg);color:var(--text);padding-bottom:76px;line-height:1.45
     <p>Advanced painless treatments, 100% sterile instruments & instant WhatsApp booking.</p>
     <div class="h-acts"><a href="#book" class="btn btn-p">Book Appointment</a><a href="#" id="callTop" class="btn btn-s">📞 Call Now</a></div>
   </section>
-
   <div class="stats">
     <div class="st"><b>100%</b><span>Painless Care</span></div>
     <div class="st"><b>10+ Yrs</b><span>Experience</span></div>
     <div class="st"><b>30 Sec</b><span>Fast Booking</span></div>
   </div>
-
   <section class="sec"><h3>Our Treatments (Tap to Select)</h3>
     <div class="grid">
       <div class="card act" onclick="pickTx(this,'Root Canal (RCT)')">🦷<b>Root Canal</b><span>Single-sitting painless</span></div>
@@ -76,7 +83,6 @@ body{background:var(--bg);color:var(--text);padding-bottom:76px;line-height:1.45
       <div class="card" onclick="pickTx(this,'General Checkup')">🩺<b>Dental Checkup</b><span>Consultation & X-Ray</span></div>
     </div>
   </section>
-
   <section class="sec" id="book"><div class="box">
     <h3 style="margin-bottom:12px">Book Appointment on WhatsApp</h3>
     <form onsubmit="bookWA(event)">
@@ -87,87 +93,117 @@ body{background:var(--bg);color:var(--text);padding-bottom:76px;line-height:1.45
       <button type="submit" class="btn btn-wa">💬 Confirm Booking on WhatsApp</button>
     </form>
   </div></section>
-
   <section class="sec"><div class="box" style="font-size:13px">
     <p><b>📍 Address:</b> <span id="fAddr">Main Road</span></p>
     <p style="margin:6px 0"><b>⏰ Timings:</b> Mon–Sat, 10:00 AM – 8:30 PM</p>
     <a id="mapBtn" target="_blank" class="btn btn-s" style="width:100%;margin-top:8px">🗺️ Open Clinic on Google Maps</a>
   </div></section>
-
-  <footer class="ftr">
-    <p id="copyTxt">© Smile Care Dental</p>
-    <button class="doc-lnk" onclick="openDoc()">🔒 Doctor Login</button>
-  </footer>
+  <footer class="ftr"><p id="copyTxt">© Smile Care Dental</p><button class="doc-lnk" onclick="openDoc()">🔒 Doctor Login</button></footer>
 </main>
-
-<div class="bbar"><div class="bbar-in">
-  <a href="#" id="callBot" class="btn btn-s">📞 Call</a>
-  <a href="#book" class="btn btn-p">Book Appointment</a>
-</div></div>
+<div class="bbar"><div class="bbar-in"><a href="#" id="callBot" class="btn btn-s">📞 Call</a><a href="#book" class="btn btn-p">Book Appointment</a></div></div>
 <div class="modal" id="docModal"><div class="m-in">
-  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">
-    <h3>🩺 Doctor Dashboard</h3>
-    <button class="btn btn-s" style="padding:7px 12px" onclick="closeDoc()">Exit ✕</button>
+  <div class="d-top">
+    <div><h3 style="font-size:17px">🩺 Doctor Command Center</h3><p id="dClinicSub" style="font-size:11px;color:#94a3b8"></p></div>
+    <button class="btn" style="background:#334155;color:#fff;padding:7px 12px" onclick="closeDoc()">Exit ✕</button>
   </div>
-  <h4 style="font-size:14px;color:#94a3b8;margin-bottom:8px">Today's Patient Queue</h4>
-  <div id="qList"></div>
-  <h4 style="font-size:14px;color:#94a3b8;margin:18px 0 4px">32-Teeth Quick Chart (Tap to Mark)</h4>
-  <p style="font-size:11px;color:#64748b;margin-bottom:8px">Normal → Red (Cavity) → Yellow (RCT)</p>
-  <div class="teeth" id="teethGrid"></div>
+  <div class="kpis">
+    <div class="kpi"><b id="kPend">0</b><span>Pending</span></div>
+    <div class="kpi"><b id="kDone" style="color:#4ade80">0</b><span>Completed</span></div>
+    <div class="kpi"><b id="kRev" style="color:#fbbf24">₹0</b><span>Est. Today</span></div>
+  </div>
+  <div class="tabs">
+    <button class="tab act" onclick="swTab(this,'tQueue')">📋 Queue</button>
+    <button class="tab" onclick="swTab(this,'tTeeth')">🦷 32-Teeth</button>
+    <button class="tab" onclick="swTab(this,'tRx')">🧾 Quick Rx</button>
+  </div>
+
+  <div id="tQueue">
+    <div class="d-card">
+      <div style="font-size:12px;font-weight:700;color:#38bdf8;margin-bottom:8px">+ Add Walk-in Patient</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px">
+        <input id="wName" class="d-inp" placeholder="Patient Name">
+        <input id="wPhone" class="d-inp" placeholder="Phone (10-digit)">
+      </div>
+      <div style="display:grid;grid-template-columns:1.5fr 1fr;gap:6px">
+        <input id="wTx" class="d-inp" placeholder="Treatment (e.g. RCT)" style="margin:0">
+        <button class="btn btn-p" style="padding:9px" onclick="addWalkin()">Add +</button>
+      </div>
+    </div>
+    <div id="qList"></div>
+  </div>
+
+  <div id="tTeeth" style="display:none"><div class="d-card">
+    <div class="leg"><span><i style="background:#ef4444"></i>Cavity</span><span><i style="background:#f59e0b"></i>RCT</span><span><i style="background:#10b981"></i>Implant/Crown</span></div>
+    <p style="font-size:11px;color:#94a3b8;font-weight:700">UPPER JAW (1–16)</p>
+    <div class="teeth" id="tUpper"></div>
+    <p style="font-size:11px;color:#94a3b8;font-weight:700">LOWER JAW (17–32)</p>
+    <div class="teeth" id="tLower"></div>
+    <button class="btn" style="width:100%;background:#334155;color:#fff" onclick="resetTeeth()">Reset Chart</button>
+  </div></div>
+
+  <div id="tRx" style="display:none"><div class="d-card">
+    <div style="font-size:13px;font-weight:700;margin-bottom:10px">Send Digital Bill / Prescription</div>
+    <input id="rxName" class="d-inp" placeholder="Patient Name">
+    <input id="rxPhone" class="d-inp" type="tel" placeholder="Patient WhatsApp (10-digit)">
+    <input id="rxFee" class="d-inp" type="number" placeholder="Total Fee (₹) e.g. 1500">
+    <textarea id="rxNote" class="d-inp" rows="3" placeholder="Medicines / Follow-up note..."></textarea>
+    <button class="btn btn-wa" onclick="sendRx()">💬 Send Rx & Bill on WhatsApp</button>
+  </div></div>
 </div></div>
 
 <script>
 const q=new URLSearchParams(location.search);
-const cName=q.get('clinic')||'Smile Care Dental';
-const cWA=(q.get('wa')||'917870144078').replace(/\D/g,'');
-const cAddr=q.get('addr')||'Main Road';
-
+const cName=q.get('clinic')||'Smile Care Dental', cWA=(q.get('wa')||'917870144078').replace(/\D/g,''), cAddr=q.get('addr')||'Main Road';
 document.title=cName+' — Book Appointment';
-document.getElementById('cName').textContent=cName;
-document.getElementById('hTitle').textContent='Painless Dental Care at '+cName;
-document.getElementById('cAddr').textContent=cAddr;
-document.getElementById('fAddr').textContent=cAddr;
-document.getElementById('copyTxt').textContent='© '+cName;
-document.getElementById('cLogo').textContent=cName.split(' ').filter(Boolean).slice(0,2).map(w=>w[0].toUpperCase()).join('')||'DC';
-document.getElementById('callTop').href='tel:+'+cWA;
-document.getElementById('callBot').href='tel:+'+cWA;
-document.getElementById('mapBtn').href='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(cName+' '+cAddr);
+['cName','copyTxt'].forEach(id=>document.getElementById(id).textContent=(id==='copyTxt'?'© ':'')+cName);
+hTitle.textContent='Painless Dental Care at '+cName; cAddrEl=document.getElementById('cAddr'); cAddrEl.textContent=cAddr; fAddr.textContent=cAddr; dClinicSub.textContent=cName+' • '+cAddr;
+cLogo.textContent=cName.split(' ').filter(Boolean).slice(0,2).map(w=>w[0].toUpperCase()).join('')||'DC';
+callTop.href=callBot.href='tel:+'+cWA; mapBtn.href='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(cName+' '+cAddr);
 
-function pickTx(el,tx){
-  document.querySelectorAll('.card').forEach(c=>c.classList.remove('act'));
-  el.classList.add('act'); document.getElementById('pTx').value=tx;
-}
-
-const KEY='dental_q_v2';
-function getQ(){return JSON.parse(localStorage.getItem(KEY)||'[{"n":"Amit Sharma","tx":"Root Canal (RCT)","sl":"Morning"},{"n":"Priya Verma","tx":"Cleaning & Polish","sl":"Evening"}]');}
+function pickTx(el,tx){document.querySelectorAll('.card').forEach(c=>c.classList.remove('act'));el.classList.add('act');pTx.value=tx;}
+const KEY='dq_v3', DKEY='dd_v3';
+const getQ=()=>JSON.parse(localStorage.getItem(KEY)||'[{"n":"Amit Sharma","ph":"9876543210","tx":"Root Canal (RCT)","sl":"Morning"},{"n":"Priya Verma","ph":"9811223344","tx":"Scaling & Whitening","sl":"Evening"}]');
+const getDone=()=>parseInt(localStorage.getItem(DKEY)||'3',10);
 
 function bookWA(e){
   e.preventDefault();
   const n=pName.value.trim(),ph=pPhone.value.trim(),tx=pTx.value,sl=pSlot.value;
-  const list=getQ(); list.unshift({n,tx,sl}); localStorage.setItem(KEY,JSON.stringify(list));
+  const l=getQ(); l.unshift({n,ph,tx,sl}); localStorage.setItem(KEY,JSON.stringify(l));
   const msg=`Hello *${cName}* Team!%0AI want to book a dental appointment:%0A%0A👤 *Name:* ${encodeURIComponent(n)}%0A📞 *Phone:* ${encodeURIComponent(ph)}%0A🦷 *Treatment:* ${encodeURIComponent(tx)}%0A⏰ *Slot:* ${encodeURIComponent(sl)}`;
   window.open(`https://wa.me/${cWA}?text=${msg}`,'_blank');
 }
 
 function openDoc(){
-  const pin=prompt('Enter Doctor PIN (Demo PIN: 1234)');
-  if(pin!=='1234') return alert('Wrong PIN! Demo PIN is 1234');
-  renderQ(); renderTeeth(); document.getElementById('docModal').style.display='block';
+  if(prompt('Enter Doctor PIN (Demo: 1234)')!=='1234') return alert('Wrong PIN! Use 1234');
+  renderQ(); initTeeth(); docModal.style.display='block';
 }
-function closeDoc(){document.getElementById('docModal').style.display='none';}
-
+function closeDoc(){docModal.style.display='none';}
+function swTab(btn,id){
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('act')); btn.classList.add('act');
+  ['tQueue','tTeeth','tRx'].forEach(x=>document.getElementById(x).style.display=(x===id?'block':'none'));
+}
 function renderQ(){
-  const list=getQ(), box=document.getElementById('qList');
-  box.innerHTML=list.length?list.map((p,i)=>`<div class="q-item"><div><b>${p.n}</b><div style="font-size:12px;color:#94a3b8">${p.tx} • ${p.sl}</div></div><button class="btn btn-p" style="padding:6px 10px;font-size:11px" onclick="doneQ(${i})">Done ✓</button></div>`).join(''):'<p style="color:#64748b;font-size:13px">No pending patients.</p>';
+  const l=getQ(), d=getDone();
+  kPend.textContent=l.length; kDone.textContent=d; kRev.textContent='₹'+((l.length+d)*800).toLocaleString('en-IN');
+  qList.innerHTML=l.length?l.map((p,i)=>`<div class="d-card"><div style="display:flex;justify-content:space-between;align-items:start;gap:8px"><div><b style="font-size:14px">${p.n}</b><div style="font-size:12px;color:#94a3b8;margin-top:2px">${p.tx} • ${p.sl}</div></div><button class="btn btn-p" style="padding:6px 10px;font-size:11px" onclick="doneQ(${i})">Done ✓</button></div><div style="display:flex;gap:8px;margin-top:10px"><a class="btn" style="flex:1;padding:7px;font-size:11px;background:#0f172a;color:#38bdf8" href="tel:+91${p.ph}">📞 Call</a><a class="btn" style="flex:1;padding:7px;font-size:11px;background:#14532d;color:#4ade80" target="_blank" href="https://wa.me/91${p.ph}?text=${encodeURIComponent('Hello '+p.n+', reminder for your dental appointment at '+cName+'.')}">💬 Remind</a></div></div>`).join(''):'<div class="d-card" style="text-align:center;color:#94a3b8">No pending patients today!</div>';
 }
-function doneQ(i){const l=getQ();l.splice(i,1);localStorage.setItem(KEY,JSON.stringify(l));renderQ();}
-
-function renderTeeth(){
-  const g=document.getElementById('teethGrid'); if(g.children.length) return;
-  for(let i=1;i<=32;i++){
-    const b=document.createElement('button'); b.className='t-btn'; b.textContent=i;
-    b.onclick=()=>{if(b.classList.contains('bad')){b.classList.remove('bad');b.classList.add('rct');}else if(b.classList.contains('rct')){b.classList.remove('rct');}else{b.classList.add('bad');}};
-    g.appendChild(b);
-  }
+function addWalkin(){
+  const n=wName.value.trim(), ph=wPhone.value.trim()||'9999999999', tx=wTx.value.trim()||'Checkup';
+  if(!n) return alert('Enter patient name');
+  const l=getQ(); l.unshift({n,ph,tx,sl:'Walk-in'}); localStorage.setItem(KEY,JSON.stringify(l));
+  wName.value=wPhone.value=wTx.value=''; renderQ();
+}
+function doneQ(i){const l=getQ();l.splice(i,1);localStorage.setItem(KEY,JSON.stringify(l));localStorage.setItem(DKEY,getDone()+1);renderQ();}
+function initTeeth(){
+  if(tUpper.children.length) return;
+  const mk=(el,s,e)=>{for(let i=s;i<=e;i++){const b=document.createElement('button');b.className='t-btn';b.textContent=i;b.onclick=()=>{if(b.classList.contains('bad')){b.classList.remove('bad');b.classList.add('rct');}else if(b.classList.contains('rct')){b.classList.remove('rct');b.classList.add('imp');}else if(b.classList.contains('imp')){b.classList.remove('imp');}else{b.classList.add('bad');}};el.appendChild(b);}};
+  mk(tUpper,1,16); mk(tLower,17,32);
+}
+function resetTeeth(){document.querySelectorAll('.t-btn').forEach(b=>b.className='t-btn');}
+function sendRx(){
+  const n=rxName.value.trim(), ph=rxPhone.value.replace(/\D/g,''), fee=rxFee.value||'0', nt=rxNote.value.trim()||'Take medicines on time.';
+  if(!n||ph.length<10) return alert('Enter patient name & 10-digit WhatsApp number');
+  const msg=`*${cName}* — Digital Receipt & Rx 🦷%0A%0A👤 *Patient:* ${encodeURIComponent(n)}%0A💊 *Advice/Rx:* ${encodeURIComponent(nt)}%0A💳 *Total Fee:* ₹${encodeURIComponent(fee)}%0A%0AThank you! Visit again.`;
+  window.open(`https://wa.me/91${ph.slice(-10)}?text=${msg}`,'_blank');
 }
 </script></body></html>
